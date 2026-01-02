@@ -10,4 +10,4 @@
 - **Email**: akam3437@gmail.com
 
 ---
-&copy; 2026 [あなたの名前]
+&copy; 2026 あかまつ
