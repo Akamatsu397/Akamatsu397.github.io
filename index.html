@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akamatsu397 | Portfolio</title>
+    <meta name="description" content="Akamatsu397's Portfolio Website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- FontAwesome (Free CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <div class="background-animation">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="container">
+        <div class="logo">Akamatsu397</div>
+        <!-- 
+        <nav>
+            <a href="#about" style="color: var(--text-secondary); margin-left: 20px;">About</a>
+            <a href="#projects" style="color: var(--text-secondary); margin-left: 20px;">Projects</a>
+        </nav>
+        -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <p class="hero-greeting">Hi, my name is</p>
+            <h1 class="hero-title">Akamatsu397.</h1>
+            <h2 class="hero-subtitle">I build things for the web.</h2>
+            <p class="hero-description">
+                ようこそ。Akamatsu397のポートフォリオサイトへ。<br>
+                Flutterでのアプリ開発や、便利なツールの制作を行っています。<br>
+                青色が好きです。
+            </p>
+            <a href="#projects" class="cta-button">Check out my projects!</a>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h3 class="section-title">Some Things I've Built</h3>
+            
+            <div class="projects-grid">
+                
+                <!-- Project 1: YakuSuta -->
+                <a href="./訳スタ/訳スタの機能について.md" class="project-card-link" style="text-decoration: none;">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <h4 class="project-title">訳スタ</h4>
+                        <p class="project-desc">
+                            翻訳学習をサポートするアプリケーション。<br>
+                            機能詳細はこちらから確認できます。
+                        </p>
+                        <div class="project-links">
+                            <span>Markdown</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 (Placeholder) -->
+                <!--
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="project-title">Another Project</h4>
+                    <p class="project-desc">
+                        ここに新しいプロジェクトの説明が入ります。<br>
+                        現在開発中です。
+                    </p>
+                    <div class="project-links">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built by Akamatsu397</p>
+        <p><a href="./privacy.md">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
