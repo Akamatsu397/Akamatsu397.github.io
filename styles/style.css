@@ -224,6 +224,249 @@ ul {
 }
 /* Note: This is a very abstract/simple CSS representation. */
 
+/* Page Layouts for Sub-pages */
+.page-container {
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 80px;
+}
+
+.page-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 16px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.page-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.markdown-body {
+  line-height: 1.8;
+  color: #333;
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+}
+
+.markdown-body h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.markdown-body ul {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.markdown-body li {
+  margin-bottom: 8px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--surface-variant);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  width: fit-content;
+}
+
+.page-footer-actions {
+  margin-top: 40px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 24px;
+  text-align: center;
+}
+
+/* App Detail Page Styles */
+.app-hero-section {
+  padding-top: calc(var(--header-height) + 60px);
+  text-align: center;
+  background: linear-gradient(180deg, rgba(66, 165, 245, 0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
+.app-hero-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+.app-tagline {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.app-badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.badge {
+  background-color: var(--surface);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.app-downloads {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.store-btn.google-play {
+  background-color: #00897B; /* Teal */
+}
+
+.store-btn.ios {
+  background-color: #333;
+}
+
+.store-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Feature Cards (Horizontal) */
+.feature-card {
+  background: var(--surface);
+  padding: 32px;
+  border-radius: var(--radius-l);
+  box-shadow: var(--elevation-1);
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.feature-icon-wrapper {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon-wrapper .material-icons-round {
+  font-size: 32px;
+}
+
+.feature-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.feature-content p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.link-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.link-list li {
+  margin-bottom: 12px;
+}
+
+.text-link {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s;
+}
+
+.text-link:hover {
+  text-decoration-color: var(--primary);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary);
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+  40% {transform: translateX(-50%) translateY(-10px);}
+  60% {transform: translateX(-50%) translateY(-5px);}
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -311,22 +554,25 @@ ul {
   gap: 24px;
 }
 
-.card-image-placeholder {
-  height: 180px;
+.card-image-container {
+  height: 200px;
   background-color: var(--surface-variant);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 24px;
 }
 
-.yakusuta-color {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); /* Example soft gradient */
+.project-app-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px; /* iOS-like squircleish */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.project-icon {
-  font-size: 64px;
-  color: rgba(255,255,255,0.8);
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+.card:hover .project-app-icon {
+  transform: scale(1.05);
 }
 
 .card-title {
@@ -364,7 +610,40 @@ ul {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+.about-card .card-content {
+  padding: 40px;
+}
+
+.about-card p {
   font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+/* Skill Chips */
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.chip {
+  background-color: var(--surface-variant);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(66, 165, 245, 0.1);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.chip:hover {
+  background-color: var(--primary-container);
+  transform: translateY(-2px);
 }
 
 /* Contact Section */
@@ -379,13 +658,44 @@ ul {
 }
 
 .contact-link {
-  display: inline-flex;
+  display: none; /* Renewed below */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0 16px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--background);
+  display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 16px;
-  font-size: 1.2rem;
-  font-weight: 500;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.social-btn:hover {
+  background-color: var(--primary-container);
   color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.social-btn .material-icons-round {
+  font-size: 24px;
+}
+
+.contact-email {
+  font-weight: 500;
+  color: var(--text-main);
+  margin-top: 8px;
 }
 
 /* Footer */
@@ -441,5 +751,14 @@ ul {
     width: 180px;
     height: 180px;
     margin: 0 auto;
+  }
+  
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .feature-icon-wrapper {
+    margin: 0 auto 16px;
   }
 }
