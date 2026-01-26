@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -41,5 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    });
+    // Screenshot Gallery Scroll
+    const galleries = document.querySelectorAll('.screenshot-gallery-wrapper');
+    galleries.forEach(wrapper => {
+        const gallery = wrapper.querySelector('.screenshot-gallery');
+        const prevBtn = wrapper.querySelector('.scroll-btn.prev');
+        const nextBtn = wrapper.querySelector('.scroll-btn.next');
+
+        if (gallery && prevBtn && nextBtn) {
+            const scrollAmount = gallery.clientWidth * 0.6; // Scroll 60% of visible area
+            
+            prevBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
     });
 });
