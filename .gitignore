@@ -27,3 +27,12 @@ coverage/
 .packages
 .pub/
 pubspec.lock
+
+# Configuration Files (User requested to ignore)
+.eslintrc.json
+.jscpd.json
+.prettierrc
+.stylelintrc.json
+package-lock.json
+package.json
+
