@@ -18,6 +18,7 @@
   --elevation-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   --elevation-2: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
   --elevation-hover: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.10);
+  --elevation-3: 0 4px 8px 3px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.3);
   
   --radius-m: 12px;
   --radius-l: 16px;
@@ -941,105 +942,103 @@ ul {
 /* Screenshots Section */
 .screenshots-section {
   padding-top: 40px;
-  padding-bottom: 40px;
-  overflow: hidden; /* Ensure no horizontal scroll on body */
+  padding-bottom: 60px;
+  overflow: hidden;
+  background-color: var(--background);
 }
 
 .screenshot-gallery-wrapper {
   position: relative;
   width: 100%;
-  padding: 40px 0; /* Add more vertical padding for breathing room */
+  padding: 20px 0 40px;
 }
 
-.scroll-btn {
+/* Gradient Masks for Fade Effect */
+.screenshot-gallery-wrapper::before,
+.screenshot-gallery-wrapper::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: var(--surface);
-  border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 100; /* Extremely high to stay on top */
-  color: var(--primary);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 10;
+  pointer-events: none;
 }
 
-.scroll-btn:hover {
-  background-color: var(--primary);
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+.screenshot-gallery-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background) 0%, rgba(248, 249, 250, 0) 100%);
 }
 
-.scroll-btn.prev {
-  left: 20px; /* Inside the gallery */
+.screenshot-gallery-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background) 0%, rgba(248, 249, 250, 0) 100%);
 }
 
-.scroll-btn.next {
-  right: 20px;
-}
 
-@media (max-width: 1100px) {
-  .scroll-btn.prev { left: 10px; }
-  .scroll-btn.next { right: 10px; }
+.screenshot-gallery-wrapper .scroll-btn {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .scroll-btn {
-    display: none;
+  .screenshot-gallery-wrapper::before,
+  .screenshot-gallery-wrapper::after {
+    width: 40px;
   }
 }
 
+
 .screenshot-gallery {
   display: flex;
-  gap: 16px;
-  padding: 0 max(24px, calc(50vw - 500px + 24px));
+  gap: 48px; /* Unified larger gap */
+  padding: 0 40px; 
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding-bottom: 32px;
-  align-items: flex-start; /* Prevent images from stretching to container height */
+  align-items: center; /* Center vertically */
+  padding-bottom: 40px;
 }
 
 .screenshot-gallery::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 .screenshot-gallery .screenshot-item {
-  height: 300px;
+  height: 300px; /* Unified height base */
   width: auto;
   object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  border-radius: 16px;
+  /* consistent premium shadow */
+  box-shadow: 0 20px 40px -8px rgba(0,0,0,0.15), 0 12px 16px -4px rgba(0,0,0,0.05); 
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
   flex-shrink: 0;
-  border: 1px solid rgba(0,0,0,0.05);
-  background-color: #f0f0f0;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: #fff;
 }
 
 .screenshot-item:hover {
-  transform: scale(1.02);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 28px 48px -8px rgba(0,0,0,0.2), 0 16px 24px -4px rgba(0,0,0,0.1);
+  z-index: 5;
 }
 
-/* Scroll Snap for nice feel on mobile */
+/* Mobile adjustments - Only adjust scroll snap, keep visuals consistent */
 @media (max-width: 768px) {
   .screenshot-gallery {
     scroll-snap-type: x mandatory;
-    gap: 12px;
+    gap: 48px; /* Keep the stylish spacing */
     padding: 0 24px 20px;
   }
   
   .screenshot-gallery .screenshot-item {
-    height: 240px !important; /* Reduced from 320px */
-    width: auto !important;
-    max-width: 160px;
+    /* height: 300px;  Try to keep consistent unless it breaks layout */
+    /* On very small screens, 300px might be too big, but let's try to unify as requested first. 
+       If 300px fits, we use it. 
+       Actually, to be truly unified, we should keep it 300px. 
+       But let's allow shrinking if it overflows viewport height? No, horizontal scroll.
+    */
     scroll-snap-align: center;
+    /* Removed the shadow override */
   }
 }
