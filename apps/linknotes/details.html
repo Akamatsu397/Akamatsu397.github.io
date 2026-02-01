@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkNotes | 機能詳細</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../styles/style.css?v=2.0.1" />
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>"
+        />
+    </head>
+    <body>
+        <!-- App Bar -->
+        <header class="app-bar">
+            <div class="app-bar-content">
+                <h1 class="logo"><a href="../../index.html">あかまつ</a></h1>
+                <nav class="nav-links">
+                    <a href="../../index.html" class="nav-item">Home</a>
+                    <a href="#download" class="nav-item">Download</a>
+                    <a href="#features" class="nav-item">Features</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- App Hero -->
+            <section class="section app-hero-section linknotes-hero">
+                <div class="container fade-in-up">
+                    <div class="app-hero-content">
+                        <img
+                            src="../../assets/linknotes/icons/app_icon_bold_transparent.png"
+                            alt="LinkNotes Icon"
+                            class="app-hero-icon"
+                        />
+                        <h1 class="app-title">LinkNotes</h1>
+                        <p class="app-tagline">アイデアをつなげる、思考が広がる。<br />直感的なメモアプリ</p>
+                        <div class="app-badges">
+                            <span class="badge">Memo & Task</span>
+                            <span class="badge">Link</span>
+                            <span class="badge">Simple</span>
+                        </div>
+                        <div id="download" class="app-downloads">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.akamatsu.link_notes"
+                                target="_blank"
+                                class="store-btn google-play ripple"
+                            >
+                                <span class="material-icons-round">android</span>
+                                <span>Google Play で手に入れよう</span>
+                            </a>
+                            <!-- iOS Coming Soon -->
+                            <button class="store-btn ios disabled" disabled>
+                                <span class="material-icons-round">apple</span>
+                                <span>App Store (Coming Soon)</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Screenshots -->
+            <section id="screenshots" class="section screenshots-section">
+                <div class="container">
+                    <h2 class="section-title fade-in-up">Screenshots</h2>
+                    <div class="screenshot-gallery-wrapper fade-in-up delay-100">
+                        <button class="scroll-btn prev" aria-label="Previous">
+                            <span class="material-icons-round">chevron_left</span>
+                        </button>
+                        <div class="screenshot-gallery">
+                            <img
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230106.png"
+                                alt="Main List"
+                                class="screenshot-item"
+                            />
+                            <img
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230119.png"
+                                alt="Editor"
+                                class="screenshot-item"
+                            />
+                            <img
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230152.png"
+                                alt="Menu"
+                                class="screenshot-item"
+                            />
+                            <img
+                                src="../../assets/linknotes/screenshots/Screenshot_20260129-210304.png"
+                                alt="Settings"
+                                class="screenshot-item"
+                            />
+                            <img
+                                src="../../assets/linknotes/screenshots/Screenshot_20260129-210323.png"
+                                alt="Theme"
+                                class="screenshot-item"
+                            />
+                        </div>
+                        <button class="scroll-btn next" aria-label="Next">
+                            <span class="material-icons-round">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section id="features" class="section">
+                <div class="container">
+                    <h2 class="section-title fade-in-up">主な機能</h2>
+
+                    <div class="feature-card fade-in-up delay-100">
+                        <div class="feature-icon-wrapper">
+                            <span class="material-icons-round">edit_note</span>
+                        </div>
+                        <div class="feature-content">
+                            <h3>メモ & タスク作成</h3>
+                            <p>
+                                シンプルなメモ作成機能と、タスク管理が可能。<br />
+                                思いついたことをすぐに書き留められます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card fade-in-up delay-100">
+                        <div class="feature-icon-wrapper">
+                            <span class="material-icons-round">link</span>
+                        </div>
+                        <div class="feature-content">
+                            <h3>ノートをリンク</h3>
+                            <p>
+                                ノート同士をリンクで繋げて、知識のネットワークを構築。<br />
+                                関連するアイデアへシームレスに移動できます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card fade-in-up delay-100">
+                        <div class="feature-icon-wrapper">
+                            <span class="material-icons-round">bolt</span>
+                        </div>
+                        <div class="feature-content">
+                            <h3>シンプル & 高速</h3>
+                            <p>
+                                起動してすぐに書ける。<br />
+                                余計な機能を削ぎ落とした、シンプルで高速な動作を実現しました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Links -->
+            <section class="section link-section">
+                <div class="container text-center">
+                    <div class="card fade-in-up">
+                        <div class="card-content">
+                            <h3>Information</h3>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="privacy.html" class="text-link">プライバシーポリシー</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html" class="text-link">ポートフォリオトップに戻る</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 あかまつ</p>
+            </div>
+        </footer>
+
+        <script src="../../scripts/main.js"></script>
+    </body>
+</html>

@@ -36,3 +36,5 @@ pubspec.lock
 package-lock.json
 package.json
 
+# Agent
+.agent
