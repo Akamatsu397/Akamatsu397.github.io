@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>訳スタ | 機能詳細</title>
+        <title>LinkNotes | Details</title>
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,22 +22,22 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>"
         />
     </head>
     <body>
         <!-- App Bar -->
         <header class="app-bar">
             <div class="app-bar-content">
-                <h1 class="logo"><a href="../../index.html">あかまつ</a></h1>
+                <h1 class="logo"><a href="../../index_en.html">Akamatsu</a></h1>
                 <nav class="nav-links">
-                    <a href="../../index.html" class="nav-item">Home</a>
+                    <a href="../../index_en.html" class="nav-item">Home</a>
                     <a href="#download" class="nav-item">Download</a>
                     <a href="#features" class="nav-item">Features</a>
                     <div class="lang-switcher">
-                        <a href="details.html" class="lang-link active">JP</a>
+                        <a href="details.html" class="lang-link">JP</a>
                         <span class="lang-divider">/</span>
-                        <a href="details_en.html" class="lang-link">EN</a>
+                        <a href="details_en.html" class="lang-link active">EN</a>
                     </div>
                 </nav>
             </div>
@@ -45,29 +45,29 @@
 
         <main>
             <!-- App Hero -->
-            <section class="section app-hero-section yakusuta-hero">
+            <section class="section app-hero-section linknotes-hero">
                 <div class="container fade-in-up">
                     <div class="app-hero-content">
                         <img
-                            src="../../assets/yakusuta/icons/translate_study_word_app_icon_rich.png"
-                            alt="訳スタ Icon"
+                            src="../../assets/linknotes/icons/app_icon_bold_transparent.png"
+                            alt="LinkNotes Icon"
                             class="app-hero-icon"
                         />
-                        <h1 class="app-title">訳スタ</h1>
-                        <p class="app-tagline">「翻訳」を「知識」に変える。<br />完全オフライン翻訳 & 単語学習アプリ</p>
+                        <h1 class="app-title">LinkNotes</h1>
+                        <p class="app-tagline">Connect ideas, expand your thinking.<br />An intuitive memo & task app.</p>
                         <div class="app-badges">
-                            <span class="badge">Offline</span>
-                            <span class="badge">OCR</span>
-                            <span class="badge">Study</span>
+                            <span class="badge">Memo & Task</span>
+                            <span class="badge">Link</span>
+                            <span class="badge">Simple</span>
                         </div>
                         <div id="download" class="app-downloads">
                             <a
-                                href="https://play.google.com/store/apps/details?id=com.akamatsu.trans.study"
+                                href="https://play.google.com/store/apps/details?id=com.akamatsu.link_notes"
                                 target="_blank"
                                 class="store-btn google-play ripple"
                             >
                                 <span class="material-icons-round">android</span>
-                                <span>Google Play で手に入れよう</span>
+                                <span>Get it on Google Play</span>
                             </a>
                             <!-- iOS Coming Soon -->
                             <button class="store-btn ios disabled" disabled>
@@ -89,33 +89,28 @@
                         </button>
                         <div class="screenshot-gallery">
                             <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_onboarding.png"
-                                alt="Onboarding"
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230106.png"
+                                alt="Main List"
                                 class="screenshot-item"
                             />
                             <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_home.png"
-                                alt="Home"
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230119.png"
+                                alt="Editor"
                                 class="screenshot-item"
                             />
                             <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_translate.png"
-                                alt="Translate"
+                                src="../../assets/linknotes/screenshots/Screenshot_20260127-230152.png"
+                                alt="Menu"
                                 class="screenshot-item"
                             />
                             <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_wordlist.png"
-                                alt="Word List"
+                                src="../../assets/linknotes/screenshots/Screenshot_20260129-210304.png"
+                                alt="Settings"
                                 class="screenshot-item"
                             />
                             <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_study.png"
-                                alt="Study Mode"
-                                class="screenshot-item"
-                            />
-                            <img
-                                src="../../assets/yakusuta/screenshots/yakusuta_test.png"
-                                alt="Test Mode"
+                                src="../../assets/linknotes/screenshots/Screenshot_20260129-210323.png"
+                                alt="Theme"
                                 class="screenshot-item"
                             />
                         </div>
@@ -129,43 +124,43 @@
             <!-- Features -->
             <section id="features" class="section">
                 <div class="container">
-                    <h2 class="section-title fade-in-up">主な機能</h2>
+                    <h2 class="section-title fade-in-up">Key Features</h2>
 
                     <div class="feature-card fade-in-up delay-100">
                         <div class="feature-icon-wrapper">
-                            <span class="material-icons-round">offline_bolt</span>
+                            <span class="material-icons-round">edit_note</span>
                         </div>
                         <div class="feature-content">
-                            <h3>完全オフライン翻訳 & OCR</h3>
+                            <h3>Memo & Task Creation</h3>
                             <p>
-                                <strong>通信不要</strong>で、プライバシーも安心。端末内で完結する高速翻訳を実現。<br />
-                                画面下部の「クイック翻訳ドック」から、テキスト・音声・カメラ（OCR）入力をワンタップで切り替え可能。
+                                Manage simple memos and tasks effortlessly.<br />
+                                Jot down your thoughts as they come.
                             </p>
                         </div>
                     </div>
 
                     <div class="feature-card fade-in-up delay-100">
                         <div class="feature-icon-wrapper">
-                            <span class="material-icons-round">school</span>
+                            <span class="material-icons-round">link</span>
                         </div>
                         <div class="feature-content">
-                            <h3>効率的な学習システム</h3>
+                            <h3>Linking Notes</h3>
                             <p>
-                                翻訳結果から重要語句をワンタップで単語帳へ保存。<br />
-                                「未習得」「学習中」「習得済」のステータス管理や、苦手な単語を自動分析するクイズモードで確実な定着をサポートします。
+                                Build a network of knowledge by connecting notes with links.<br />
+                                Navigate seamlessly between related ideas.
                             </p>
                         </div>
                     </div>
 
                     <div class="feature-card fade-in-up delay-100">
                         <div class="feature-icon-wrapper">
-                            <span class="material-icons-round">analytics</span>
+                            <span class="material-icons-round">bolt</span>
                         </div>
                         <div class="feature-content">
-                            <h3>分析と履歴</h3>
+                            <h3>Simple & Fast</h3>
                             <p>
-                                学習の進捗や継続日数をダッシュボードで視覚化。<br />
-                                SQLiteを用いた強力な全文検索で、過去の翻訳履歴も一瞬で呼び出せます。
+                                Open and write instantly.<br />
+                                We've achieved a simple, high-speed experience by trimming down unnecessary features.
                             </p>
                         </div>
                     </div>
@@ -180,10 +175,10 @@
                             <h3>Information</h3>
                             <ul class="link-list">
                                 <li>
-                                    <a href="privacy.html" class="text-link">プライバシーポリシー</a>
+                                    <a href="privacy_en.html" class="text-link">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="../../index.html" class="text-link">ポートフォリオトップに戻る</a>
+                                    <a href="../../index_en.html" class="text-link">Back to Portfolio Top</a>
                                 </li>
                             </ul>
                         </div>
@@ -194,7 +189,7 @@
 
         <footer class="footer">
             <div class="container">
-                <p>&copy; 2026 あかまつ</p>
+                <p>&copy; 2026 Akamatsu</p>
             </div>
         </footer>
 
