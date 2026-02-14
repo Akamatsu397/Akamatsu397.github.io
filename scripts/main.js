@@ -3,6 +3,10 @@
  * スクロールアニメーションとナビゲーション制御を担当
  */
 
+// Constants
+const HEADER_OFFSET = 64; // Height of the app bar
+const SCROLL_AMOUNT = 300; // Adjust based on item width + gap
+
 document.addEventListener('DOMContentLoaded', () => {
     const HEADER_OFFSET = 64; // Height of the app bar
 
@@ -49,18 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.scroll-btn.next');
 
     if (gallery && prevBtn && nextBtn) {
-        const scrollAmount = 300; // Adjust based on item width + gap
-
         prevBtn.addEventListener('click', () => {
             gallery.scrollBy({
-                left: -scrollAmount,
+                left: -SCROLL_AMOUNT,
                 behavior: 'smooth',
             });
         });
 
         nextBtn.addEventListener('click', () => {
             gallery.scrollBy({
-                left: scrollAmount,
+                left: SCROLL_AMOUNT,
                 behavior: 'smooth',
             });
         });
