@@ -1,9 +1,0 @@
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /apps/linknotes/details.html HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /styles/style.css?v=2.0.1 HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/screenshots/Screenshot_20260127-230106.png HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/screenshots/Screenshot_20260127-230119.png HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /scripts/main.js HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/icons/app_icon_bold_transparent.png HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/screenshots/Screenshot_20260127-230152.png HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/screenshots/Screenshot_20260129-210304.png HTTP/1.1" 200 -
-127.0.0.1 - - [14/Feb/2026 11:47:27] "GET /assets/linknotes/screenshots/Screenshot_20260129-210323.png HTTP/1.1" 200 -
