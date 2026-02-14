@@ -684,10 +684,6 @@ ul {
     text-align: center;
 }
 
-.contact-link {
-    display: none; /* Renewed below */
-}
-
 .social-links {
     display: flex;
     justify-content: center;
