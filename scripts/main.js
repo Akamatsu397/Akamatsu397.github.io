@@ -4,6 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    const HEADER_OFFSET = 64; // Height of the app bar
+
     // Scroll Animation (Intersection Observer)
     const observerOptions = {
         root: null,
@@ -31,9 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                const headerOffset = 64; // Height of the app bar
                 const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                const offsetPosition = elementPosition + window.pageYOffset - HEADER_OFFSET;
 
                 window.scrollTo({
                     top: offsetPosition,

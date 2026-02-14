@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;"
+        />
         <title>プライバシーポリシー | 訳スタ</title>
 
         <!-- Google Fonts -->
@@ -22,7 +26,7 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>"
+            href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E💙%3C/text%3E%3C/svg%3E"
         />
     </head>
     <body>
@@ -86,12 +90,18 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank"
+                                        <a
+                                            href="https://policies.google.com/technologies/ads?hl=ja"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             >Google ポリシーと規約：テクノロジー</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="https://policies.google.com/privacy?hl=ja" target="_blank"
+                                        <a
+                                            href="https://policies.google.com/privacy?hl=ja"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             >Google プライバシーポリシー</a
                                         >
                                     </li>
